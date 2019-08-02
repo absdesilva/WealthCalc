@@ -1,0 +1,6 @@
+/*******************************************/
+#LICENSE LOG - Wealth Calc 
+/*******************************************/
+		
+-Logo, Buddhima De Silva, Raw Source	
+-Icons, Android, https://romannurik.github.io
