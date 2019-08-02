@@ -25,9 +25,11 @@ namespace WealthCalc
 
             SetContentView(Resource.Layout.activity_main);
 
+
             //navigation button event
             BottomNavigationView navigation = FindViewById<BottomNavigationView>(Resource.Id.navigation);
             navigation.SetOnNavigationItemSelectedListener(this);
+
 
             //get home page text view id and assign values
             textCashInHand = FindViewById<TextView>(Resource.Id.showcashinhand);
@@ -44,7 +46,6 @@ namespace WealthCalc
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
         public bool OnNavigationItemSelected(IMenuItem item)
@@ -52,13 +53,12 @@ namespace WealthCalc
             switch (item.ItemId)
             {
                 case Resource.Id.navigation_home:
-                    SetContentView(Resource.Layout.activity_main);
                     return true;
                 case Resource.Id.navigation_dashboard:
                     SetContentView(Resource.Layout.activity_add);
                     return true;
                 case Resource.Id.navigation_notifications:
-                    //textMessage.SetText(Resource.String.title_notifications);
+                    SetContentView(Resource.Layout.activity_booklet);
                     return true;
             }
             return false;
