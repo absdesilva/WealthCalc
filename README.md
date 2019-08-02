@@ -20,4 +20,5 @@ Wealth Calc helps you to be smart about your finance. It is built for everyone t
 + 22/07/2019 - Created project files and updated the GITRepo 
 + 24/07/2019 - Created app icon and updated different resolution folders
 + 25/07/2019 - Added navigation bar
++ 30/07/2019 - Finished editing Home UI
 
