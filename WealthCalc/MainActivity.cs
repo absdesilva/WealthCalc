@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
 using Android.Support.Design.Widget;
@@ -8,7 +9,7 @@ using Android.Widget;
 
 namespace WealthCalc
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
 
@@ -34,6 +35,7 @@ namespace WealthCalc
             textIncome = FindViewById<TextView>(Resource.Id.showincome);
             textExpenses = FindViewById<TextView>(Resource.Id.showexpenses);
 
+            //These variables assign data to home page views
             textCashInHand.Text = "$" + totalCashInHand;
             textSavings.Text = "$" + totalSavings;
             textIncome.Text = "$" + totalIncome;
@@ -50,10 +52,10 @@ namespace WealthCalc
             switch (item.ItemId)
             {
                 case Resource.Id.navigation_home:
-                    //textMessage.SetText(Resource.String.title_home);
+                    SetContentView(Resource.Layout.activity_main);
                     return true;
                 case Resource.Id.navigation_dashboard:
-                    //textMessage.SetText(Resource.String.title_dashboard);
+                    SetContentView(Resource.Layout.activity_add);
                     return true;
                 case Resource.Id.navigation_notifications:
                     //textMessage.SetText(Resource.String.title_notifications);
