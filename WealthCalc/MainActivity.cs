@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.Content.PM;
 using Android.OS;
 using Android.Runtime;
@@ -13,12 +14,13 @@ namespace WealthCalc
     public class MainActivity : AppCompatActivity, BottomNavigationView.IOnNavigationItemSelectedListener
     {
 
-
-        TextView textCashInHand, textSavings, textIncome, textExpenses;
-        double totalCashInHand, totalSavings, totalIncome, totalExpenses = 0;
+        public double totalCashInHand, totalSavings, totalIncome, totalExpenses = 0;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
+
+            TextView textCashInHand, textSavings, textIncome, textExpenses;
+
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
            
@@ -55,7 +57,8 @@ namespace WealthCalc
                 case Resource.Id.navigation_home:
                     return true;
                 case Resource.Id.navigation_dashboard:
-                    SetContentView(Resource.Layout.activity_add);
+                    var intent = new Intent(this, typeof(AddActivity));
+                    StartActivity(intent);
                     return true;
                 case Resource.Id.navigation_notifications:
                     SetContentView(Resource.Layout.activity_booklet);

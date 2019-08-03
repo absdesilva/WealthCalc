@@ -3406,8 +3406,8 @@ namespace WealthCalc
 			// aapt resource value: 0x7f0a0040
 			public const int collapseActionView = 2131361856;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int container = 2131361949;
+			// aapt resource value: 0x7f0a009f
+			public const int container = 2131361951;
 			
 			// aapt resource value: 0x7f0a0082
 			public const int content = 2131361922;
@@ -3511,8 +3511,8 @@ namespace WealthCalc
 			// aapt resource value: 0x7f0a006e
 			public const int image = 2131361902;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int imageView1 = 2131361951;
+			// aapt resource value: 0x7f0a009e
+			public const int imageView1 = 2131361950;
 			
 			// aapt resource value: 0x7f0a00c3
 			public const int info = 2131361987;
@@ -3550,8 +3550,8 @@ namespace WealthCalc
 			// aapt resource value: 0x7f0a00a9
 			public const int linearLayout4 = 2131361961;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int linearLayout5 = 2131361950;
+			// aapt resource value: 0x7f0a009d
+			public const int linearLayout5 = 2131361949;
 			
 			// aapt resource value: 0x7f0a0024
 			public const int listMode = 2131361828;
@@ -4067,13 +4067,13 @@ namespace WealthCalc
 			public const int abc_tooltip = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int activity_booklet = 2130968604;
+			public const int activity_add = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int activity_main = 2130968605;
+			public const int activity_booklet = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int add = 2130968606;
+			public const int activity_main = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
 			public const int browser_actions_context_menu_page = 2130968607;
