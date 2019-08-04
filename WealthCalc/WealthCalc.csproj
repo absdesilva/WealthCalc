@@ -63,6 +63,7 @@
     <Compile Include="BookletPickerActivity.cs" />
     <Compile Include="BookletActivity.cs" />
     <Compile Include="Calc.cs" />
+    <Compile Include="CalcListViewAdapter.cs" />
     <Compile Include="DataStore.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -174,6 +175,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_picker.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_booklet_item.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

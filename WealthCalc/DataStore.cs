@@ -12,6 +12,11 @@ using Android.Widget;
 
 namespace WealthCalc
 {
+    /* 
+        This class helps to store the app data. This is how the activities get connected to
+        each other. I have created Generic lists so it will be more dynamic when storing data.
+        Have created couple of methods to get calculated results when called.
+    */
     class DataStore
     {
         public static readonly List<Calc> ExpensesList = new List<Calc>();
@@ -65,6 +70,20 @@ namespace WealthCalc
             CashInHand = income - (savings + expenses);
 
             return CashInHand;
+        }*/
+
+        /*public static string getDetails(string type)
+        {
+            string final;
+
+            if (type.Equals("e"))
+            {
+
+            }
+
+
+            return final;
+
         }*/
     }
 }

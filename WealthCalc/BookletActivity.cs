@@ -22,6 +22,36 @@ namespace WealthCalc
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
             SetContentView(Resource.Layout.activity_booklet);
+
+            TextView textTitle = FindViewById<TextView>(Resource.Id.viewTitle);
+            ListView listData = FindViewById<ListView>(Resource.Id.bookletlist);
+
+            string catType = Intent.GetStringExtra("catType");
+            List<string> bookletData = new List<string>();
+            if (catType.Equals("Expense"))
+            {
+                foreach (Calc aPart in DataStore.ExpensesList)
+                {
+                    bookletData.Add(aPart.Name + " - $" + aPart.Amount.ToString());
+                }
+            }
+            else if (catType.Equals("Income"))
+            {
+                foreach (Calc aPart in DataStore.IncomeList)
+                {
+                    bookletData.Add(aPart.Name + " - $" + aPart.Amount.ToString());
+                }
+            }
+            else if (catType.Equals("Saving"))
+            {
+                foreach (Calc aPart in DataStore.SavingsList)
+                {
+                    bookletData.Add(aPart.Name + " - $" + aPart.Amount.ToString());
+                }
+            }
+
+            textTitle.Text = catType;
+            listData.Adapter = new CalcListViewAdapter(this, bookletData);
         }
     }
 }

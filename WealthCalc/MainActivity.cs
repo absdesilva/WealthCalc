@@ -54,7 +54,7 @@ namespace WealthCalc
              };
             buttonBooklet.Click += (sender, e) =>
             {
-                var intent = new Intent(this, typeof(BookletActivity));
+                var intent = new Intent(this, typeof(BookletPickerActivity));
                 StartActivity(intent);
             };
 

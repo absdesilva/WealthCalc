@@ -17,5 +17,29 @@
             android:scaleType="fitCenter"
             android:foregroundGravity="top|center_vertical|center"/>
     </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:layout_marginTop="120dp">
+        <TextView
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/viewTitle"
+            android:gravity="center|center_vertical"
+            android:textColor="#ff455a64"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bookletlist" />
+    </LinearLayout>
 
 </RelativeLayout>

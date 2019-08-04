@@ -23,4 +23,7 @@ Wealth Calc helps you to be smart about your finance. It is built for everyone t
 + 30/07/2019 - Finished editing all the UI and connected with the Activities
 + 31/07/2019 - Added Bussiness Logic by creating required classes and connecting to the activities
 + 01/08/2019 - Finished creating Home and Adding new data to the app.
++ 02/08/2019 - Created Custom ListView with the use of a ViewAdapter
++ 03/08/2019 - Implemented the list view and implemented data
++ 04/08/2019 - Carried out multiple tests and added a Splash Screen
 

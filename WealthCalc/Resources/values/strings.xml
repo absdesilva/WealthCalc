@@ -3,6 +3,11 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Add</string>
     <string name="title_notifications">Booklet</string>
+  
+    <string name="catIn">Income</string>
+    <string name="catEx">Expense</string>
+    <string name="catSav">Saving</string>
+      
   <string-array name="dropdown_arrays">
     <item>Expense</item>
     <item>Income</item>
