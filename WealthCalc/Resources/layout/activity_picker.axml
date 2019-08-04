@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="102.5dp"
+        android:id="@+id/linearLayout5"
+        android:layout_marginBottom="25.0dp">
+        <ImageView
+            android:src="@drawable/orange"
+            android:layout_width="wrap_content"
+            android:layout_height="103.0dp"
+            android:id="@+id/imageView1"
+            android:scaleType="fitCenter"
+            android:foregroundGravity="top|center_vertical|center"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout6"
+        android:layout_marginTop="150dp">
+        <Button
+            android:text="Add Expense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expenseButton"
+            android:height="80dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:background="#ffff1744"
+            android:textColor="#ffffffff"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+        <Button
+            android:text="Add Income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/incomeButton"
+            android:height="80dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:background="#ff00e676"
+            android:textColor="#ffffffff"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+        <Button
+            android:text="Add Savings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/savingsButton"
+            android:height="80dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:background="#ff2979ff"
+            android:textColor="#ffffffff"
+            android:layout_marginBottom="@dimen/activity_vertical_margin" />
+        <Button
+            android:text="Add Starting Cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/startingcashButton"
+            android:height="80dp"
+            android:textStyle="bold"
+            android:textSize="19dp"
+            android:background="#fff46524"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

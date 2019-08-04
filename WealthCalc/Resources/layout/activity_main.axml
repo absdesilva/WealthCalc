@@ -138,16 +138,36 @@
             android:textSize="30dp"
             android:gravity="center_vertical|right" />
     </LinearLayout>
-
-
-    <android.support.design.widget.BottomNavigationView
-        android:id="@+id/navigation"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="0dp"
-        android:layout_marginStart="0dp"
-        android:background="?android:attr/windowBackground"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/navigation" />
+        android:id="@+id/linearLayout5"
+        android:padding="@dimen/activity_vertical_margin"
+        android:background="#ffeeeeee"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:text="Add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/addButton"
+            android:gravity="center_vertical|center"
+            android:width="180dp"
+            android:background="#fff46524"
+            android:textColor="#ffffffff"
+            android:layout_gravity="start|center_vertical" />
+        <Button
+            android:text="BOOKLET"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bookletButton"
+            android:gravity="center_vertical|center"
+            android:width="180dp"
+            android:foregroundGravity="right|center_vertical"
+            android:background="#ffffffff"
+            android:textColor="#fff46524"
+            android:layout_gravity="end|center_vertical" 
+             />
+    </LinearLayout>
 
 </RelativeLayout>
