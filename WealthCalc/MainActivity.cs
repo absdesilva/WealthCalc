@@ -30,7 +30,6 @@ namespace WealthCalc
             totalExpenses = DataStore.getTotalExpenses();
             totalCashInHand = totalIncome - (totalSavings + totalExpenses); ;
 
-
             //get home page text view and button id and assign values
             TextView textCashInHand = FindViewById<TextView>(Resource.Id.showcashinhand);
             TextView textSavings = FindViewById<TextView>(Resource.Id.showsavings);

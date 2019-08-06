@@ -59,31 +59,5 @@ namespace WealthCalc
             return total;
         }
 
-        /*public static double getTotalCashInHand()
-        {
-            double CashInHand = 0;
-
-            double income = getTotalIncome();
-            double expenses = getTotalExpenses();
-            double savings = getTotalExpenses();
-
-            CashInHand = income - (savings + expenses);
-
-            return CashInHand;
-        }*/
-
-        /*public static string getDetails(string type)
-        {
-            string final;
-
-            if (type.Equals("e"))
-            {
-
-            }
-
-
-            return final;
-
-        }*/
     }
 }

@@ -23,10 +23,20 @@ namespace WealthCalc
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_picker);
 
+
+            //Main three buttons are connected by its Id
             Button expenseButton = FindViewById<Button>(Resource.Id.expenseButton);
             Button incomeButton = FindViewById<Button>(Resource.Id.incomeButton);
             Button savingsButton = FindViewById<Button>(Resource.Id.savingsButton);
 
+
+            /*
+            Uses a button click event each button, where the program will generate
+            an intent to connect two activities and pass data. For example:
+            when pressed on expense button, a new intent  is created and assigned the destination with 
+            the data which needs to be carried.
+
+             */
             var intent = new Intent(this, typeof(BookletActivity));
             expenseButton.Click += (sender, e) =>
             {
