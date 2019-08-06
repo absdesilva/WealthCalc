@@ -26,4 +26,5 @@ Wealth Calc helps you to be smart about your finance. It is built for everyone t
 + 02/08/2019 - Created Custom ListView with the use of a ViewAdapter
 + 03/08/2019 - Implemented the list view and implemented data
 + 04/08/2019 - Carried out multiple tests and added a Splash Screen
++ 06/08/2019 - WealthCalc V1 Completed
 
